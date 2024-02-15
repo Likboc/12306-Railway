@@ -1,0 +1,13 @@
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id : example
+          uri : localhost:8080
+          predicates:
+            - Path=/exam
+          filters:
+            - name: TokenValidate
+server:
+  port: 8080
