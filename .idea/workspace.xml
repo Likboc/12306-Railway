@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5379cebe-189e-4004-b12b-38dacd7c5801" name="Changes" comment="" />
+    <list default="true" id="5379cebe-189e-4004-b12b-38dacd7c5801" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dto/TicketListDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dto/TicketListDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/service/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/service/impl/TicketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/TicketListDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/TicketListDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/service/impl/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/service/impl/TicketServiceImpl.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +23,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,7 +46,9 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/guo94/IdeaProjects/Railway",
     "node.js.detected.package.eslint": "true",
@@ -102,7 +114,7 @@
       <workItem from="1707659927184" duration="21148000" />
       <workItem from="1707835860241" duration="7343000" />
       <workItem from="1707966376586" duration="13827000" />
-      <workItem from="1708007125546" duration="3429000" />
+      <workItem from="1708007125546" duration="7878000" />
     </task>
     <servers />
   </component>
@@ -112,22 +124,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint type="java-exception">
-          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/service/impl/TicketServiceImpl.java</url>
-          <line>44</line>
-          <properties>
-            <option name="lambda-ordinal" value="0" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson2/fastjson2/2.0.46/fastjson2-2.0.46.jar!/com/alibaba/fastjson2/JSON.class</url>
-          <line>1102</line>
-          <option name="timeStamp" value="3" />
+          <line>67</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

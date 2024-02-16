@@ -86,5 +86,5 @@ public class TicketListDTO {
     /**
      * 席别实体集合
      */
-//    private List<SeatClassDTO> seatClassList;
+    private List<SeatClassDTO> seatClassList;
 }
