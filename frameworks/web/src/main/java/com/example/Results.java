@@ -2,6 +2,9 @@ package com.example;
 
 import com.example.result.Result;
 
+/**
+ * 全局结果类
+ */
 public class Results {
     public static Result<Void> success() {
         return new Result<Void>().setCode(Result.SUCCESS_CODE);
