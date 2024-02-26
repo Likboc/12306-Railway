@@ -8,7 +8,7 @@ import java.util.List;
 public class Config {
 
     /**
-     * 黑名单前置路径
+     * 黑名单前置路径，需要验证token的url
      */
     private List<String> blackPathPre;
 }
