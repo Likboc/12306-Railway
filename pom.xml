@@ -68,6 +68,30 @@
         <artifactId>guava</artifactId>
         <version>33.0.0-jre</version>
       </dependency>
+      <!-- jjwt -->
+      <dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt</artifactId>
+        <version>0.9.1</version>
+      </dependency>
+      <!-- fasterjson -->
+      <dependency>
+        <groupId>com.alibaba.fastjson2</groupId>
+        <artifactId>fastjson2</artifactId>
+        <version>2.0.46</version>
+      </dependency>
+      <!-- jakarta -->
+      <dependency>
+        <groupId>jakarta.validation</groupId>
+        <artifactId>jakarta.validation-api</artifactId>
+        <version>3.0.2</version>
+      </dependency>
+      <!-- redisson -->
+      <dependency>
+        <groupId>org.redisson</groupId>
+        <artifactId>redisson-spring-boot-starter</artifactId>
+        <version>3.21.3</version>
+      </dependency>
       <!-- local Starter -->
       <dependency>
         <groupId>com.example</groupId>
