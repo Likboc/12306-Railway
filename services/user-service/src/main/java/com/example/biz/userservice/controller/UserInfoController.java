@@ -10,10 +10,7 @@ import com.example.biz.userservice.service.UserService;
 import com.example.result.Result;
 import io.micrometer.core.lang.Nullable;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
@@ -26,8 +23,8 @@ public class UserInfoController {
      * 根据用户账号查询信息
      */
     @GetMapping()
-    public Result<UserDO> getUserInfoByUserName(UserLoginReqDTO reqDTO) {
-        return Results.success(userService.getUserInfo(reqDTO));
+    public Result<UserDO> getUserInfoByUserName(@RequestParam("username") String username) {
+        return Results.success(userService.getUserInfo(username));
     }
 
     /**
