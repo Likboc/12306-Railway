@@ -1,5 +1,4 @@
 # 12306-Railway
-<<<<<<< Updated upstream
 >微服务铁路在线系统
 =======
 >本项目为微服务铁路在线系统
@@ -9,4 +8,4 @@
 3. Redis + Token 作幂等，请求前需要获取令牌。
 4. Spring Cloud Gateway 作网关，实现请求转发和请求过滤，维护IP黑名单，屏蔽违法请求
 5. RocketMq 进行流量削峰
->>>>>>> Stashed changes
+6. 使用JWT进行用户登录验证，用户注册使用布隆过滤器防止用户ID重复，实现用户密码，身份信息等的脱敏化处理

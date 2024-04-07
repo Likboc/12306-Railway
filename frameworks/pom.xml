@@ -16,6 +16,10 @@
         <module>web</module>
         <module>convention</module>
         <module>biz</module>
+        <module>log</module>
+        <module>base</module>
+        <module>biz/user</module>
+        <module>cache</module>
     </modules>
 
     <properties>

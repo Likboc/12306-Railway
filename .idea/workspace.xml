@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5379cebe-189e-4004-b12b-38dacd7c5801" name="Changes" comment="&quot;用户登录控制层&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ca51ba8a-139d-498a-83f7-321df54eff94.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ca51ba8a-139d-498a-83f7-321df54eff94/storage_v2/_src_/schema/12306_aggregation.2zAFHA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ca51ba8a-139d-498a-83f7-321df54eff94/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ca51ba8a-139d-498a-83f7-321df54eff94/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ca51ba8a-139d-498a-83f7-321df54eff94/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ca51ba8a-139d-498a-83f7-321df54eff94/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frameworks/base/src/main/java/com/example/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frameworks/base/src/main/java/com/example/safa/FastJsonSafeMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frameworks/base/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frameworks/cache/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frameworks/log/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frameworks/web/target/classes/com/example/Results.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway-service/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway-service/target/classes/com/example/gateway/GatewayApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway-service/target/classes/com/example/gateway/config/Config.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway-service/target/classes/com/example/gateway/filter/TokenValidateGatewayFilterFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/common/constant/OrderRocketMQConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/common/enums/OrderCanalErrorCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/common/enums/OrderItemStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/common/enums/OrderStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/common/enums/PayChannelEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/common/enums/RefundTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/controller/TicketOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dao/algorithm/OrderCommonTableComplexAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dao/entity/OrderDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dao/entity/OrderItemDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dao/entity/OrderItemPassengerDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dao/mapper/OrderItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dao/mapper/OrderItemPassengerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dao/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dto/domain/OrderItemStatusReversalDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dto/domain/OrderStatusReversalDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dto/req/CancelTicketOrderReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dto/req/TicketOrderCreateReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dto/req/TicketOrderItemCreateReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dto/req/TicketOrderItemQueryReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dto/req/TicketOrderPageQueryReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dto/req/TicketOrderSelfPageQueryReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dto/resp/TicketOrderDetailRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dto/resp/TicketOrderDetailSelfRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/dto/resp/TicketOrderPassengerDetailRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/service/orderid/DistributedIdGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/service/orderid/OrderIdGeneratorManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/controller/RegionStationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dao/entity/SeatDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dao/entity/StationDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dao/entity/TrainDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dao/entity/TrainStationDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dao/entity/TrainStationPriceDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dao/entity/TrainStationRelationDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dao/mapper/SeatMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dao/mapper/StationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dao/mapper/TrainMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dao/mapper/TrainStationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dao/mapper/TrainStationPriceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dao/mapper/TrainStationRelationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dto/domain/RouteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dto/resp/TicketPurchaseRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/remote/RemoteServiceInvoke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/service/RegionStationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/service/TrainStationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/service/cache/SeatMarginCacheLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/service/impl/RegionStationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/service/impl/RocketmqServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/service/impl/TrainStationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/TicketServiceApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dao/entity/SeatDO$SeatDOBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dao/entity/SeatDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dao/entity/StationDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dao/entity/TrainDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dao/entity/TrainStationDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dao/entity/TrainStationPriceDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dao/entity/TrainStationRelationDO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dao/mapper/SeatMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dao/mapper/StationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dao/mapper/TrainMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dao/mapper/TrainStationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dao/mapper/TrainStationPriceMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dao/mapper/TrainStationRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/domain/RouteDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/domain/SeatClassDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/domain/TicketListDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/req/PurchaseTicketReqDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/resp/TicketPageQueryRespDTO$TicketPageQueryRespDTOBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/remote/RemoteServiceInvoke.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/service/TrainStationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/service/cache/SeatMarginCacheLoader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/service/impl/RocketmqServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/service/impl/TrainStationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/toolkit/StationCalculateUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/UserServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dao/entity/PassengerDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dao/entity/UserDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dao/entity/UserDeletionDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dao/entity/UserMailDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dao/entity/UserPhoneDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dao/entity/UserReuseDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dao/mapper/PassengerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dao/mapper/UserDeletionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dao/mapper/UserMailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dao/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dao/mapper/UserPhoneMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dao/mapper/UserReuseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dto/req/PassengerRemoveReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dto/req/PassengerReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dto/req/UserDeletionReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dto/req/UserLoginReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dto/req/UserRegisterReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dto/req/UserUpdateReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dto/resp/PassengerActualRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dto/resp/PassengerRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dto/resp/UserLoginRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dto/resp/UserQueryActualRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dto/resp/UserQueryRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/dto/resp/UserRegisterRespDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/service/UserLoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/service/impl/UserLoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/user-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frameworks/base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frameworks/base/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frameworks/biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frameworks/biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frameworks/biz/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frameworks/biz/user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frameworks/biz/user/src/test/java/com/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/frameworks/cache/src/test/java/com/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frameworks/convention/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frameworks/convention/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frameworks/convention/target/classes/com/example/page/PageRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/frameworks/convention/target/classes/com/example/page/PageRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frameworks/convention/target/classes/com/example/result/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/frameworks/convention/target/classes/com/example/result/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frameworks/log/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frameworks/log/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frameworks/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frameworks/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frameworks/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frameworks/web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frameworks/web/src/main/java/com/example/Results.java" beforeDir="false" afterPath="$PROJECT_DIR$/frameworks/web/src/main/java/com/example/Results.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frameworks/web/src/test/java/com/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/frameworks/cache/src/main/java/com/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/TicketServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/controller/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/controller/TicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/controller/TrainStationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/controller/TrainStationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dto/SeatClassDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dto/domain/SeatClassDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dto/TicketListDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dto/domain/TicketListDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dto/TrainStationPriceDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dto/resp/TicketPageQueryRespDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/dto/resp/TicketPageQueryRespDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/service/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/service/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/src/main/java/com/example/service/impl/TicketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/common/constant/RedisKeyConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/common/constant/RedisKeyConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/controller/CORSController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/controller/TicketController.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/controller/TicketController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/SeatClassDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/TicketListDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/TrainStationPriceDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/req/TicketPageQueryReqDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/req/TicketPageQueryReqDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/resp/TicketPageQueryRespDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/dto/resp/TicketPageQueryRespDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/service/TicketService.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/service/TicketService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/service/impl/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/ticket-service/target/classes/com/example/service/impl/TicketServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/config/RBloomFilterConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/config/RBloomFilterConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/config/UserRegisterBloomFilterProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/config/UserRegisterBloomFilterProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/example/biz/userservice/controller/UserInfoController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Likboc&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8cd15df5-6f4c-466d-960c-8e636d03bf40" />
+        <option name="url" value="https://github.com/Likboc/12306-Railway.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2cDxOux5iLQOVzO4eWAvT27A6oK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "import_schema_mapping": "<schema-mapping>\n  <databases>\n    <list>\n      <schema-mapping-item>\n        <source-data-source-id>ca51ba8a-139d-498a-83f7-321df54eff94</source-data-source-id>\n        <source-path>schema/&quot;12306_aggregation&quot;</source-path>\n        <target-data-source-id>ca51ba8a-139d-498a-83f7-321df54eff94</target-data-source-id>\n        <target-path>schema/&quot;12306_aggregation&quot;</target-path>\n      </schema-mapping-item>\n    </list>\n  </databases>\n</schema-mapping>",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/guo94/IdeaProjects/Railway/services/order-service/src/main/java/com/example",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\guo94\IdeaProjects\Railway\services\order-service\src\main\java\com\example" />
+      <recent name="C:\Users\guo94\IdeaProjects\Railway\frameworks\base\src\main\java\com\example" />
+      <recent name="C:\Users\guo94\IdeaProjects\Railway\frameworks\log\src\main\resources" />
+      <recent name="C:\Users\guo94\IdeaProjects\Railway\frameworks\base\src\main\resources" />
+      <recent name="C:\Users\guo94\IdeaProjects\Railway\services\user-service\src\main\java\com\example\biz\userservice" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\guo94\IdeaProjects\Railway\frameworks\log\src\main\resources\META-INF" />
+      <recent name="C:\Users\guo94\IdeaProjects\Railway\frameworks\base\src\main\resources\META-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.config" />
+      <recent name="com.example.core" />
+      <recent name="com.example.biz.userservice.config" />
+      <recent name="com.example.gateway.constant" />
+      <recent name="com.example.gateway.util" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.App" />
+      <module name="ticket-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CORSController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.controller.CORSController" />
+      <module name="ticket-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Railway" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Railway" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ticket-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ticket-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.TicketServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.biz.userservice.UserServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.biz.userservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.UserServiceApplication" />
+        <item itemvalue="Spring Boot.TicketServiceApplication" />
+        <item itemvalue="Spring Boot.App" />
+        <item itemvalue="Application.CORSController" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5379cebe-189e-4004-b12b-38dacd7c5801" name="Changes" comment="" />
+      <created>1707659926134</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707659926134</updated>
+      <workItem from="1707659927184" duration="21148000" />
+      <workItem from="1707835860241" duration="7343000" />
+      <workItem from="1707966376586" duration="13827000" />
+      <workItem from="1708007125546" duration="21031000" />
+      <workItem from="1708176051600" duration="1476000" />
+      <workItem from="1708184767792" duration="2611000" />
+      <workItem from="1708223621890" duration="31000" />
+      <workItem from="1708485400669" duration="1974000" />
+      <workItem from="1708524710975" duration="6494000" />
+      <workItem from="1708570414593" duration="1747000" />
+      <workItem from="1708604548657" duration="2376000" />
+      <workItem from="1708701076260" duration="1871000" />
+      <workItem from="1708703130697" duration="47000" />
+      <workItem from="1708703815400" duration="3979000" />
+      <workItem from="1708764395929" duration="6000" />
+      <workItem from="1708774547904" duration="10314000" />
+      <workItem from="1708860103483" duration="30026000" />
+      <workItem from="1709201869359" duration="18000" />
+      <workItem from="1709201891728" duration="1136000" />
+      <workItem from="1709228426771" duration="7155000" />
+      <workItem from="1709619925242" duration="2285000" />
+      <workItem from="1709622428051" duration="7609000" />
+      <workItem from="1709713966312" duration="12863000" />
+      <workItem from="1709800404185" duration="119000" />
+      <workItem from="1710757637297" duration="33869000" />
+      <workItem from="1711342085066" duration="6472000" />
+      <workItem from="1711682412751" duration="596000" />
+      <workItem from="1711956266927" duration="5684000" />
+      <workItem from="1712418498790" duration="381000" />
+      <workItem from="1712418887865" duration="9244000" />
+    </task>
+    <task id="LOCAL-00001" summary="&quot;add 车票查询接口&quot;">
+      <option name="closed" value="true" />
+      <created>1708945709629</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708945709629</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;用户信息DTO&quot;">
+      <option name="closed" value="true" />
+      <created>1708949402545</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708949402545</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&quot;JWT工具类&quot;">
+      <option name="closed" value="true" />
+      <created>1708950164395</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708950164395</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&quot;自定义Token拦截&quot;">
+      <option name="closed" value="true" />
+      <created>1708950968295</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708950968295</updated>
+    </task>
+    <task id="LOCAL-00005" summary="&quot;访问黑名单&quot;">
+      <option name="closed" value="true" />
+      <created>1708951008456</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708951008456</updated>
+    </task>
+    <task id="LOCAL-00006" summary="&quot;访问黑名单&quot;">
+      <option name="closed" value="true" />
+      <created>1708951031725</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708951031725</updated>
+    </task>
+    <task id="LOCAL-00007" summary="&quot;SCG config&quot;">
+      <option name="closed" value="true" />
+      <created>1708952395252</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708952395252</updated>
+    </task>
+    <task id="LOCAL-00008" summary="&quot;Bloom Filter&quot;">
+      <option name="closed" value="true" />
+      <created>1708955732183</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708955732183</updated>
+    </task>
+    <task id="LOCAL-00009" summary="&quot;Bloom Filter Config&quot;">
+      <option name="closed" value="true" />
+      <created>1708955797919</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708955797919</updated>
+    </task>
+    <task id="LOCAL-00010" summary="&quot;返回结果类&quot;">
+      <option name="closed" value="true" />
+      <created>1708956635072</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708956635072</updated>
+    </task>
+    <task id="LOCAL-00011" summary="&quot;返回结果生成&quot;">
+      <option name="closed" value="true" />
+      <created>1708956745087</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708956745087</updated>
+    </task>
+    <task id="LOCAL-00012" summary="&quot;Log AOP&quot;">
+      <option name="closed" value="true" />
+      <created>1708961933239</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708961933239</updated>
+    </task>
+    <task id="LOCAL-00013" summary="&quot;Log AOP annotation&quot;">
+      <option name="closed" value="true" />
+      <created>1708961958721</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708961958721</updated>
+    </task>
+    <task id="LOCAL-00014" summary="&quot;Log AOP DTO&quot;">
+      <option name="closed" value="true" />
+      <created>1708961979032</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708961979032</updated>
+    </task>
+    <task id="LOCAL-00015" summary="&quot;Log AOP autoconfig&quot;">
+      <option name="closed" value="true" />
+      <created>1708961991897</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708961991897</updated>
+    </task>
+    <task id="LOCAL-00016" summary="&quot;CONTEXT HOLDER&quot;">
+      <option name="closed" value="true" />
+      <created>1708962318628</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708962318628</updated>
+    </task>
+    <task id="LOCAL-00017" summary="&quot;用户登录信息实体&quot;">
+      <option name="closed" value="true" />
+      <created>1709186919042</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709186919042</updated>
+    </task>
+    <task id="LOCAL-00018" summary="&quot;用户登录信息捕获&quot;">
+      <option name="closed" value="true" />
+      <created>1709187180767</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1709187180767</updated>
+    </task>
+    <task id="LOCAL-00019" summary="&quot;用户登录环境&quot;">
+      <option name="closed" value="true" />
+      <created>1709187208663</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1709187208663</updated>
+    </task>
+    <task id="LOCAL-00020" summary="&quot;JWT util&quot;">
+      <option name="closed" value="true" />
+      <created>1709187662409</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1709187662409</updated>
+    </task>
+    <task id="LOCAL-00021" summary="&quot;应用自动配置&quot;">
+      <option name="closed" value="true" />
+      <created>1709187714648</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1709187714648</updated>
+    </task>
+    <task id="LOCAL-00022" summary="&quot;过滤器注册&quot;">
+      <option name="closed" value="true" />
+      <created>1709187884290</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1709187884290</updated>
+    </task>
+    <task id="LOCAL-00023" summary="update pom">
+      <option name="closed" value="true" />
+      <created>1709717184270</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1709717184270</updated>
+    </task>
+    <task id="LOCAL-00024" summary="update pom">
+      <option name="closed" value="true" />
+      <created>1709728894313</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1709728894313</updated>
+    </task>
+    <task id="LOCAL-00025" summary="车站关系工具类">
+      <option name="closed" value="true" />
+      <created>1710840036403</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1710840036403</updated>
+    </task>
+    <task id="LOCAL-00026" summary="&quot;用户信息控制层&quot;">
+      <option name="closed" value="true" />
+      <created>1712418684183</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1712418684183</updated>
+    </task>
+    <task id="LOCAL-00027" summary="&quot;结果封装类&quot;">
+      <option name="closed" value="true" />
+      <created>1712420232500</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1712420232500</updated>
+    </task>
+    <task id="LOCAL-00028" summary="&quot;README.md&quot;">
+      <option name="closed" value="true" />
+      <created>1712420937200</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1712420937200</updated>
+    </task>
+    <task id="LOCAL-00029" summary="&quot;用户登录控制层&quot;">
+      <option name="closed" value="true" />
+      <created>1712454853837</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1712454853837</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;JWT工具类&quot;" />
+    <MESSAGE value="&quot;自定义Token拦截&quot;" />
+    <MESSAGE value="&quot;访问黑名单&quot;" />
+    <MESSAGE value="&quot;SCG config&quot;" />
+    <MESSAGE value="&quot;Bloom Filter&quot;" />
+    <MESSAGE value="&quot;Bloom Filter Config&quot;" />
+    <MESSAGE value="&quot;返回结果类&quot;" />
+    <MESSAGE value="&quot;返回结果生成&quot;" />
+    <MESSAGE value="&quot;Log AOP&quot;" />
+    <MESSAGE value="&quot;Log AOP annotation&quot;" />
+    <MESSAGE value="&quot;Log AOP DTO&quot;" />
+    <MESSAGE value="&quot;Log AOP autoconfig&quot;" />
+    <MESSAGE value="&quot;CONTEXT HOLDER&quot;" />
+    <MESSAGE value="&quot;用户登录信息实体&quot;" />
+    <MESSAGE value="&quot;用户登录信息捕获&quot;" />
+    <MESSAGE value="&quot;用户登录环境&quot;" />
+    <MESSAGE value="&quot;JWT util&quot;" />
+    <MESSAGE value="&quot;应用自动配置&quot;" />
+    <MESSAGE value="&quot;过滤器注册&quot;" />
+    <MESSAGE value="update pom" />
+    <MESSAGE value="车站关系工具类" />
+    <MESSAGE value="&quot;用户信息控制层&quot;" />
+    <MESSAGE value="&quot;结果封装类&quot;" />
+    <MESSAGE value="&quot;README.md&quot;" />
+    <MESSAGE value="&quot;用户登录控制层&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;用户登录控制层&quot;" />
+  </component>
+</project>

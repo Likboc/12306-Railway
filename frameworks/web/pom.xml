@@ -7,10 +7,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>web</artifactId>
+    <artifactId>railway-web-spring-boot-starter</artifactId>
     <packaging>jar</packaging>
 
-    <name>web</name>
+    <name>railway-web-spring-boot-starter</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -27,7 +27,7 @@
 
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>convention</artifactId>
+            <artifactId>railway-convention-spring-boot-starter</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

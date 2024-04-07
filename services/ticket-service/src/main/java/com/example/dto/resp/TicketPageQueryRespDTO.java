@@ -1,19 +1,41 @@
 package com.example.dto.resp;
 
+import com.example.dto.domain.TicketListDTO;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class TicketPageQueryRespDTO {
+
     /**
-     *  ticket search result
+     * 车次集合数据
      */
-    private String trainID;
+    private List<TicketListDTO> trainList;
 
-    private String from_station;
+    /**
+     * 车次类型：D-动车 Z-直达 复兴号等
+     */
+    private List<Integer> trainBrandList;
 
-    private String to_station;
+    /**
+     * 出发车站
+     */
+    private List<String> departureStationList;
 
-    private long price;
+    /**
+     * 到达车站
+     */
+    private List<String> arrivalStationList;
 
-    private long ticket_num;
+    /**
+     * 车次席别
+     */
+    private List<Integer> seatClassTypeList;
 }

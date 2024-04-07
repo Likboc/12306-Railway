@@ -15,6 +15,7 @@
     <modules>
         <module>order-service</module>
         <module>ticket-service</module>
+        <module>user-service</module>
     </modules>
 
     <properties>
@@ -28,5 +29,6 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 </project>

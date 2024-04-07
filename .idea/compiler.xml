@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="railway-log-spring-boot-starter" />
+        <module name="gateway-service" />
+        <module name="railway-convention-spring-boot-starter" />
+        <module name="railway-cache-spring-boot-starter" />
+        <module name="railway-biz-spring-boot-starter" />
+        <module name="order-service" />
+        <module name="user-service" />
+        <module name="user" />
+        <module name="ticket-service" />
+        <module name="railway-web-spring-boot-starter" />
+        <module name="railway-base-spring-boot-starter" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base" target="1.8" />
+      <module name="biz" target="1.8" />
+      <module name="bootstrap" target="1.7" />
+      <module name="cache" target="1.8" />
+      <module name="convention" target="1.8" />
+      <module name="log" target="1.8" />
+      <module name="spring-boot-starter-web-railway" target="1.8" />
+      <module name="web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="base" options="-parameters" />
+      <module name="biz" options="-parameters" />
+      <module name="cache" options="-parameters" />
+      <module name="convention" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
+      <module name="log" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="railway-base-spring-boot-starter" options="-parameters" />
+      <module name="railway-biz-spring-boot-starter" options="-parameters" />
+      <module name="railway-cache-spring-boot-starter" options="-parameters" />
+      <module name="railway-convention-spring-boot-starter" options="-parameters" />
+      <module name="railway-log-spring-boot-starter" options="-parameters" />
+      <module name="railway-web-spring-boot-starter" options="-parameters" />
+      <module name="spring-boot-starter-web-railway" options="-parameters" />
+      <module name="ticket-service" options="-parameters" />
+      <module name="user" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+      <module name="web" options="-parameters" />
+    </option>
+  </component>
+</project>

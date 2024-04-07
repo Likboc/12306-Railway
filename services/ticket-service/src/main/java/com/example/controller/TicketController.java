@@ -1,17 +1,20 @@
 package com.example.controller;
 
-import com.example.Results;
+
 import com.example.dto.req.TicketPageQueryReqDTO;
-import com.example.result.Result;
+import com.example.dto.resp.TicketPageQueryRespDTO;
 import com.example.service.TicketService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
 @RequiredArgsConstructor
+@CrossOrigin("*")
 public class TicketController {
 
     @Autowired
@@ -22,13 +25,17 @@ public class TicketController {
      * @param requestParam
      * @return
      */
-    @GetMapping("/api/ticket-service/ticket/query")
-    public Result<Object> pageListTicketQuery(TicketPageQueryReqDTO requestParam) {
-        return new Result<>().setData(ticketService.pageListTicketQueryV1(requestParam));
+    @PostMapping("/api/ticket-service/ticket/query")
+    public TicketPageQueryRespDTO pageListTicketQuery(@RequestBody TicketPageQueryReqDTO requestParam) {
+        return ticketService.pageListTicketQueryV1(requestParam);
     }
 
-    public Result<String> purchaseTicket() {
-        return Results.success(ticketService.purchaseTicketsV1());
+    /**
+     * 车票购买，调用订单服务，创建新订单
+     * @return
+     */
+    public Object purchaseTicket(Object param) {
+        return ticketService.purchaseTickets(param);
     }
 
 
